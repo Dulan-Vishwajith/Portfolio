@@ -1,0 +1,53 @@
+.footer{
+    background-color: #091d41;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* more spacing */
+}
+
+.footer-container{
+    max-width: 600px;
+    width: 100%;
+}
+
+.footer-container h3{
+    color: #c9906f;
+    font-size: 16px;
+    letter-spacing: 2px; /* looks premium */
+}
+
+.contact h2{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.email a{
+    font-size: 18px;
+    color: #c9906f;
+    text-decoration: none;
+}
+
+.email a:hover{
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* better than margin */
+    margin-top: 15px;
+}
+
+.links a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover{
+    color: #c9906f;
+}

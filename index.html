@@ -8,6 +8,10 @@
         <link rel = "stylesheet" href="styles/about.css">
         <link rel = "stylesheet" href="styles/global.css">
         <link rel = "stylesheet" href="styles/education.css">
+        <link rel = "stylesheet" href="styles/publications.css">
+        <link rel = "stylesheet" href="styles/footer.css">
+        <link rel = "stylesheet" href="styles/project.css">
+        
         <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         
     </head>
@@ -23,8 +27,9 @@
             <div class="left-section">
                 <button class="about-button" onclick="goToAbout()">About</button>
                 <button class="education-button" onclick="gotToEducation()">Education</button>
-                <button class="projects-button" onclick="">Projects</button>
-                <button class="publications-button" onclick="">Publications</button>
+                <button class="projects-button" onclick="goToProject()">Projects</button>
+                <button class="publications-button" onclick="goToPublications()">Publications</button>
+                <button class="contact-button" onclick="goToContact()">Contact</button>
             </div>
         </header>
 
@@ -66,9 +71,12 @@
 
             <!--About Section-->
             <section class="about" id="about">
-                <div class="about-text">
-                    <h2>About</h2>
-    
+                <!--Title of About-->
+                <h2 class="title-text">About</h2>
+
+                <!--Container-->
+                <div class="about-container">
+                    
 
                     <p class="description">
                     Hello! I'm Dulan, currently a Software Engineering undergraduate at the University of Kelaniya. My studies have given me a strong foundation in software development principles and a keen interest in building technology that makes an impact.
@@ -84,13 +92,14 @@
                 </div>
             </section>
 
+
             <!--Education Section-->
             <section class="education" id="education">
                 <!--Education Tile-->
-                <h2 class="section-title">Education</h2>
+                <h2 class="education-title">Education</h2>
                 
                 <!--Container-->
-                <div class="container">
+                <div class="academic-container">
                     
                     <!--Academic things-->
                     <div class="academic">
@@ -105,7 +114,7 @@
 
                             <div class="card-middle">
                                 <span class="institute">University of Kelaniya</span>
-                                <span class="grade">CGPA: 3.94</span>
+                                <span class="grade">CGPA: 3.94/4.00</span>
                             </div>
 
                             <p class="summmary">
@@ -161,22 +170,218 @@
                         </div>
 
                         
-
                     </div>            
                 </div>
             </section>
 
             <!--Projects Section-->
-            <projects class="project">
+            <section class="project" id="project">
+                <!--Project Title-->
+                <h2 class="title-text">Projects</h2>
+                
+                <div class="project-container">
+                    
+                    <!--Card 1-->
+                    <div class="project-card">
+                        <img src = "assets/project_img/3D-University-Map.png">
+                        <h3>University 3D Map for Newcomers (Group Project)</h3>
+                        <p class="description">
+                            Developed an interactive 3D map to help new students easily navigate the university campus, including key locations such as lecture halls, libraries, and facilities.
+                        </p>
 
-            </projects>
+                        <!--DropDown Content-->
+                        <div class="project-details">
+                            <p><strong>Technologies:</strong> API, JavaScript, HTML, CSS</p>
+                            <p><strong>Features:</strong></p>
+                            <ul>
+                                <li>3D navigation</li>
+                                <li>Location markers</li>
+                                <li>Interactive UI</li>
+                            </ul>
+
+                            <div class="project-buttons">
+                                <a href="https://58to59.gt.tc/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/Dulan-Vishwajith/University-3D-Map.git" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    
+                    <!--Card 2-->
+                    <div class="project-card">
+                        <img src = "assets/project_img/Porfolio.png">
+                        <h3>Personal Portfolio Website (Individual Project)</h3>
+                        <p class="description">
+                            Developed a responsive personal portfolio website to showcase my skills, projects, and academic background as a Software Engineering undergraduate. The site provides an interactive and user-friendly interface to highlight my work and technical expertise.
+                        </p>
+
+                        <!--DropDown Content-->
+                        <div class="project-details">
+                            <p><strong>Technologies:</strong> API, JavaScript, HTML, CSS</p>
+                            <p><strong>Features:</strong></p>
+                            <ul>
+                                <li>Modern and professional UI</li>
+                                <li>Project cards with live demos and source code</li>
+                                <li>Easy navigation and accessibility</li>
+                                <li>Cross-browser compatibility</li>
+                            </ul>
+
+                            <div class="project-buttons">
+                                <a href="https://dulanvish.com/" target="_blank">Live Demo</a>
+                                <a href="https://github.com/Dulan-Vishwajith/Portfolio.git" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="project-card">
+                        <img src = "assets/project_img/3D-University-Map.png">
+                        <h3>University 3D Map for Newcomers (Group Project)</h3>
+                        <p class="description">
+                            Developed an interactive 3D map to help new students easily navigate the university campus, including key locations such as lecture halls, libraries, and facilities.
+                        </p>
+
+                        <!--DropDown Content-->
+                        <div class="project-details">
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Features:</strong></p>
+                            <ul>
+                                <li>Modern and professional UI</li>
+                                <li>Project cards with live demos and source code</li>
+                                <li>Easy navigation and accessibility</li>
+                                <li>Cross-browser compatibility</li>
+                            </ul>
+
+                            <div class="project-buttons">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </section>
 
             <!--Publications Section-->
-            <publications class="publications">
+            <section class="publications" id="publications">
+                <!--Publications Title-->
+                <h2 class="title-text">Publications</h2>
+                
+                <div class="publications-container">
 
-            </publication>
+                    <!--Card 1-->
+                    <div class="publication-card">
+                        <img src = "https://miro.medium.com/v2/resize:fit:720/format:webp/1*2FZtRQhxnPMW6i1XKlAphA.png">
+                        <h3>Importance of Diagrams</h3>
+                        <span class="publication-date">Published on 2026-03-21</span>
+                        <p class="description">
+                            Explored the importance of diagrams as visual tools for representing systems, ideas, and relationships in a clear and structured manner, especially within software engineering.
+                        </p>
+
+                        <!--DropDown Content-->
+                        <div class="publication-details">
+                            <p><strong>Included Topics:</strong></p>
+                            <ul>
+                                <li>Basics of diagrams and their purpose</li>
+                                <li>Types like flowcharts, UML, and ER diagrams</li>
+                                <li>Improves communication and clarity</li>
+                                <li>Helps in system design and problem solving</li>
+                                <li>Makes learning and understanding easier</li>
+                            </ul>
+
+                            <div class="publication-buttons">
+                                <a href="https://medium.com/@dulanvishwajithgunarathna/importance-of-diagrams-fa45aab59c12" target="_blank">Full Article</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Card 2-->
+                    <div class="publication-card">
+                        <img src = "https://miro.medium.com/v2/resize:fit:720/format:webp/1*XBUDan-NI4uenqWGy6jl8g.png">
+                        <h3>Building a Library Management System Using Object-Oriented Programming</h3>
+                        <span class="publication-date">Published on 2026-01-11</span>
+                        <p class="description">
+                            Developed a Library Management System to demonstrate core Object-Oriented Programming (OOP) principles by modeling real-world library operations such as managing books, members, and transactions.
+                        </p>
+
+                        <!--DropDown Content-->
+                        <div class="publication-details">
+                            <p><strong>Included Topics:</strong></p>
+                            <ul>
+                                <li>Class-based design (Book, Member, Librarian)</li>
+                                <li>Inheritance using a common Person class</li>
+                                <li>Encapsulation for secure data handling</li>
+                                <li>Polymorphism for flexible operations</li>
+                                <li>Abstraction for simplified user interactions</li>
+                            </ul>
+
+                            <div class="publication-buttons">
+                                <a href="https://medium.com/@dulanvishwajithgunarathna/building-a-library-management-system-using-object-oriented-programming-1f729a02a492" target="_blank">Full Article</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="publication-card">
+                        <img src = "https://miro.medium.com/v2/resize:fit:720/format:webp/1*XIZAZfUPCUy2Lmytjia-kg.jpeg">
+                        <h3>Enhancing Malware Prediction : An Undergraduate Research Breakthrough</h3>
+                        <span class="publication-date">Published on 2025-10-15</span>
+                        <p class="description">
+                            Presented a research-based project analyzing an enhanced MalSEIRS model to improve the accuracy of malware propagation prediction in dynamic network environments, showcased at the Undergraduate Research Symposium and Innovation Exhibition 2025.
+                        </p>
+
+                        <!--DropDown Content-->
+                        <div class="publication-details">
+                            <p><strong>Included Topics:</strong></p>
+                            <ul>
+                                <li>Improved malware prediction</li>
+                                <li>Real-world network simulation</li>
+                                <li>Faster and more accurate analysis</li>
+                                <li>Graph-based visualization</li>
+                                <li>Supports early threat detection</li>
+                            </ul>
+
+                            <div class="publication-buttons">
+                                <a href="https://medium.com/@dulanvishwajithgunarathna/enhancing-malware-prediction-an-undergraduate-research-breakthrough-e06c43cbbaac" target="_blank">Full Article</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
         </main>
-        <footer class="footer">
+
+        <!--Footer-->
+        <footer class="footer" id="contact">
+            <!--Footer Container-->
+            <div class="footer-container">
+                
+                <!--Contact Section-->
+                <h3>GET IN TOUCH</h3>
+
+                <!--Contact Details-->
+                <div class="contact">
+                    <!--Contact Title-->
+                    <h2>Let's Connect...</h2>
+
+                    <!--Email-->
+                    <div class="email">
+                        <a href="mailto:dulanvishwajithgunarathna@gmail.com">Email Me</a>
+                    </div>
+                    <!--Social Links-->
+                    <div class="links">
+                        <a href="https://github.com/Dulan-Vishwajith"><i class="fab fa-github"></i>  GitHub</a>
+                        <a href="https://www.linkedin.com/in/dulan-vishwajith-a8a230216/"><i class="fab fa-linkedin"></i>  LinkedIn</a>
+                    </div>                    
+
+                </div>
+
+            </div>
 
 
         <!--Footer-->
