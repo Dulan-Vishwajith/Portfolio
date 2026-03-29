@@ -29,14 +29,11 @@ undergraduate.
 
 ## 🌍 Live Demo
 
-https://dulanvish.com/
+  https://dulanvish.com/
 
 ## 🔗 Connect
 
-GitHub: https://github.com/Dulan-Vishwajith\
-LinkedIn: https://www.linkedin.com/in/dulan-vishwajith-a8a230216/\
-Medium: https://medium.com/@dulanvishwajithgunarathna
+  GitHub: https://github.com/Dulan-Vishwajith\
+  LinkedIn: https://www.linkedin.com/in/dulan-vishwajith-a8a230216/\
+  Medium: https://medium.com/@dulanvishwajithgunarathna
 
-## 📌 Run Locally
-
-git clone https://github.com/your-username/your-repo.git
