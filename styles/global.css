@@ -24,3 +24,21 @@ section{
     font-size: 40px;
     color: #091d41;
 }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background: #091d41;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block; 
+    z-index: 1000;
+}
+.back-to-top:hover {
+    background: #c9906f;
+    transform: translateY(-2px);
+}

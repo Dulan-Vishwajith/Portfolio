@@ -16,17 +16,17 @@
 
 .footer-container h3{
     color: #c9906f;
-    font-size: 16px;
+    font-size: 22px;
     letter-spacing: 2px; /* looks premium */
 }
 
 .contact h2{
-    font-size: 32px;
+    font-size: 40px;
     margin: 10px 0;
 }
 
 .email a{
-    font-size: 18px;
+    font-size: 22px;
     color: #c9906f;
     text-decoration: none;
 }
@@ -38,13 +38,13 @@
 .links{
     display: flex;
     justify-content: center;
-    gap: 20px; /* better than margin */
+    gap: 22px; /* better than margin */
     margin-top: 15px;
 }
 
 .links a{
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     text-decoration: none;
     transition: 0.3s;
 }

@@ -13,14 +13,15 @@
         <link rel = "stylesheet" href="styles/project.css">
         <link rel = "stylesheet" href="styles/downloads.css">
         <link rel = "stylesheet" href="styles/skill.css">
+        <link rel = "stylesheet" href="styles/responsive.css">
         
         <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         
         <!--Header-->
-        <header class="header">
+        <header class="header" id="header">
         
             <!--Right Section-->
             <div class="right-section">
@@ -30,7 +31,7 @@
             <!--Left Section-->
             <div class="left-section">
                 <button class="about-button" onclick="goToAbout()">About</button>
-                <button class="education-button" onclick="gotToEducation()">Education</button>
+                <button class="education-button" onclick="goToEducation()">Education</button>
                 <button class="skill-button" onclick="goToSkills()">Skills</button>
                 <button class="projects-button" onclick="goToProject()">Projects</button>
                 <button class="downloads-button" onclick="goToDownloads()">Downloads</button>
@@ -390,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
 
                     <!--Card 2-->
                     <div class="publication-card">
@@ -446,6 +447,8 @@
                 
                 </div>
             </section>
+
+            <button class="back-to-top" id="backToTop" onclick="backToTop()"><i class="fas fa-arrow-up"></i></button>
         </main>
 
         <!--Footer-->
