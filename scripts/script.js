@@ -7,6 +7,8 @@ behavior: "smooth"
 });
 });
 
+
+
 //function for scroll when click about button
 function goToAbout(){
         document.getElementById("about").scrollIntoView({
@@ -41,6 +43,20 @@ function goToContact(){
         });
 }       
 
+//function for scroll when click skill button
+function goToSkills(){
+        document.getElementById("skill").scrollIntoView({
+                behavior:"smooth"
+        });
+}
+
+//function for scroll when click download button
+function goToDownloads(){
+        document.getElementById("downloads").scrollIntoView({
+                behavior:"smooth"
+        });
+}
+
 
 //--Project Section--Dropdown//
 const cards = document.querySelectorAll(".project-card");
@@ -57,6 +73,7 @@ card.addEventListener("click", () => {
         card.classList.toggle("active");
 });
 });
+
 
 
 

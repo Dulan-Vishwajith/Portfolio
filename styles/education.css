@@ -3,13 +3,6 @@
     flex-direction: column;
 }
 
-.education-title{
-    text-align: center;
-    font-size: 40px;
-     color: #091d41;
-}
-
-
 /*Container*/
 .academic-container{
     max-width: 1100px;
@@ -28,7 +21,7 @@
 }
 
 /*Academic Cards*/
-.card {
+.aca-card {
     width: 100%;
     padding: 22px;
     border-radius: 12px;
@@ -40,10 +33,15 @@
     transition: all 0.3s ease;
 }
 
+.aca-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 
 
 /*Academic Card Content*/
-.card-top {
+.aca-card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +60,7 @@
     white-space: nowrap;
 }
 
-.card-middle {
+.aca-card-middle {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -110,6 +108,12 @@
 
     background: #f5f5f6;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /*Certification Card Content*/

@@ -11,13 +11,17 @@
         <link rel = "stylesheet" href="styles/publications.css">
         <link rel = "stylesheet" href="styles/footer.css">
         <link rel = "stylesheet" href="styles/project.css">
+        <link rel = "stylesheet" href="styles/downloads.css">
+        <link rel = "stylesheet" href="styles/skill.css">
         
         <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         
     </head>
     <body>
+        
         <!--Header-->
         <header class="header">
+        
             <!--Right Section-->
             <div class="right-section">
                 <p id="goOverview">Dulan Vishwajith</p>
@@ -27,10 +31,13 @@
             <div class="left-section">
                 <button class="about-button" onclick="goToAbout()">About</button>
                 <button class="education-button" onclick="gotToEducation()">Education</button>
+                <button class="skill-button" onclick="goToSkills()">Skills</button>
                 <button class="projects-button" onclick="goToProject()">Projects</button>
+                <button class="downloads-button" onclick="goToDownloads()">Downloads</button>
                 <button class="publications-button" onclick="goToPublications()">Publications</button>
                 <button class="contact-button" onclick="goToContact()">Contact</button>
             </div>
+        
         </header>
 
 
@@ -41,7 +48,7 @@
                 <!--Overview Text Section-->
                 <div class ="overview-text">
                     <h1>
-                        Dulan Vishwajith, <span>UG,BSc (Hons) in SE</span>
+                        Dulan Vishwajith, <span>UG, BSc (Hons) in SE</span>
                     </h1>
                     
                     <p class="description">
@@ -51,6 +58,7 @@
                     <div class="info-buttons"> 
                         <span>Net Centric </span> 
                         <span>Mobile Computing</span> 
+                        <span>Backend Development</span>
                         <span>Cybersecurity</span> 
                     </div>
 
@@ -96,7 +104,7 @@
             <!--Education Section-->
             <section class="education" id="education">
                 <!--Education Tile-->
-                <h2 class="education-title">Education</h2>
+                <h2 class="title-text">Education</h2>
                 
                 <!--Container-->
                 <div class="academic-container">
@@ -106,7 +114,7 @@
                         
                         <!--Academic Cards-->
                         <!--Card 1-->
-                        <div class="card">
+                        <div class="aca-card">
                             <div class="card-top">
                                 <h3 class="title">Bachelor of Science in Software Engineering(UG)</h3>
                                 <span class="time">2025-Present</span>
@@ -124,7 +132,7 @@
                         </div>
 
                         <!--Card 2-->
-                        <div class="card">
+                        <div class="aca-card">
                             <div class="card-top">
                                 <h3 class="title">G.C.E. (A/L) EXAMINATION - 2023</h3>
                                 <span class="time">2023-2024</span>
@@ -174,6 +182,73 @@
                 </div>
             </section>
 
+            <section class="skill" id="skill">
+                <h2 class="title-text">Skills</h2>
+
+                <div class="skill-container">
+
+                    <!-- Programming Languages -->
+                    <div class="skill-card">
+                        <h3>Programming Languages</h3>
+
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="empty-bar"><div class="fill js"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="empty-bar"><div class="fill python"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>C</span>
+                            <div class="empty-bar"><div class="fill c"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="empty-bar"><div class="fill java"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+
+                        <div class="skill-item">
+                            <span>HTML</span>
+                            <div class="empty-bar"><div class="fill html"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>CSS</span>
+                            <div class="empty-bar"><div class="fill css"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-card">
+                        <h3>Frameworks & Libraries</h3>
+
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="empty-bar"><div class="fill react"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="empty-bar"><div class="fill node"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>Express.js</span>
+                            <div class="empty-bar"><div class="fill express"></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
             <!--Projects Section-->
             <section class="project" id="project">
                 <!--Project Title-->
@@ -219,7 +294,7 @@
 
                         <!--DropDown Content-->
                         <div class="project-details">
-                            <p><strong>Technologies:</strong> API, JavaScript, HTML, CSS</p>
+                            <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
                             <p><strong>Features:</strong></p>
                             <ul>
                                 <li>Modern and professional UI</li>
@@ -265,6 +340,23 @@
                     
                 </div>
             </section>
+
+            <!--Resume Section-->
+            <section class="downloads" id="downloads">
+                <!--Resume Title-->
+                <h2 class="title-text">Downloads</h2>
+                <div class="downloads-container">
+                    
+                    <!--Resume Card-->
+                    <div class="download-card">
+                        <h3>Download My Resume</h3>
+                        <a href="assets/Dulan_Vishwajith_Resume.pdf" target="_blank" class="download-btn"><i class="fas fa-download"></i> Download My Resume</a>
+                    </div>
+
+                
+                </div>
+            </section>
+
 
             <!--Publications Section-->
             <section class="publications" id="publications">
@@ -371,7 +463,7 @@
 
                     <!--Email-->
                     <div class="email">
-                        <a href="mailto:dulanvishwajithgunarathna@gmail.com">Email Me</a>
+                        <a href="mailto:dulanvishwajithgunarathna@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
                     </div>
                     <!--Social Links-->
                     <div class="links">
@@ -390,9 +482,10 @@
 
 
         <!--Linking script file -->
-        <script src="script.js">
+        <script src="scripts/script.js">
     
 
         </script>
+   
     </body>
 </html>
