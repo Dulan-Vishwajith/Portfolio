@@ -54,7 +54,7 @@
     padding: 0 15px;
 }
 .project-card.active .project-details {
-    max-height: 250px;
+    max-height: 320px;
     padding-bottom: 20px;
 }
 

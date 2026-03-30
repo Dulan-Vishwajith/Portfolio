@@ -63,7 +63,7 @@
     padding: 0 15px;
 }
 .publication-card.active .publication-details {
-    max-height: 250px;
+    max-height: 320px;
     padding-bottom: 20px;
 }
 

@@ -17,7 +17,7 @@ function goToAbout(){
 }
 
 //function for scroll when click education button
-function gotToEducation(){
+function goToEducation(){
         document.getElementById("education").scrollIntoView({
                 behavior:"smooth"
         });
@@ -53,6 +53,13 @@ function goToSkills(){
 //function for scroll when click download button
 function goToDownloads(){
         document.getElementById("downloads").scrollIntoView({
+                behavior:"smooth"
+        });
+}
+
+//function for scroll when click back to top button
+function backToTop(){
+        document.getElementById("header").scrollIntoView({
                 behavior:"smooth"
         });
 }
@@ -93,3 +100,5 @@ card.addEventListener("click", () => {
         card.classList.toggle("active");
 })
 });
+
+
