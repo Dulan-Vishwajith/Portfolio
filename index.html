@@ -30,13 +30,13 @@
             
             <!--Left Section-->
             <div class="left-section">
-                <button class="about-button" onclick="goToAbout()">About</button>
-                <button class="education-button" onclick="goToEducation()">Education</button>
-                <button class="skill-button" onclick="goToSkills()">Skills</button>
-                <button class="projects-button" onclick="goToProject()">Projects</button>
-                <button class="downloads-button" onclick="goToDownloads()">Downloads</button>
-                <button class="publications-button" onclick="goToPublications()">Publications</button>
-                <button class="contact-button" onclick="goToContact()">Contact</button>
+                <button class="about-button" onclick="goTo('about')">About</button>
+                <button class="education-button" onclick="goTo('education')">Education</button>
+                <button class="skill-button" onclick="goTo('skill')">Skills</button>
+                <button class="projects-button" onclick="goTo('project')">Projects</button>
+                <button class="downloads-button" onclick="goTo('downloads')">Downloads</button>
+                <button class="publications-button" onclick="goTo('publications')">Publications</button>
+                <button class="contact-button" onclick="goTo('contact')">Contact</button>
             </div>
         
         </header>
@@ -53,7 +53,7 @@
                     </h1>
                     
                     <p class="description">
-                        Undergraduate Software Engineering student at the University of Kelaniya with interests in web development, mobile app development, and building practical software solutions.
+                        Undergraduate Software Engineering student at the University of Kelaniya with interests in web development, mobile app development and building practical software solutions.
                     </p>
                     
                     <div class="info-buttons"> 
@@ -81,7 +81,7 @@
             <!--About Section-->
             <section class="about" id="about">
                 <!--Title of About-->
-                <h2 class="title-text">About</h2>
+                <h2 class="title-text" id="about-title">About</h2>
 
                 <!--Container-->
                 <div class="about-container">
@@ -105,7 +105,7 @@
             <!--Education Section-->
             <section class="education" id="education">
                 <!--Education Tile-->
-                <h2 class="title-text">Education</h2>
+                <h2 class="title-text" id="education-title">Education</h2>
                 
                 <!--Container-->
                 <div class="academic-container">
@@ -184,7 +184,7 @@
             </section>
 
             <section class="skill" id="skill">
-                <h2 class="title-text">Skills</h2>
+                <h2 class="title-text" id="skills-title">Skills</h2>
 
                 <div class="skill-container">
 
@@ -253,7 +253,7 @@
             <!--Projects Section-->
             <section class="project" id="project">
                 <!--Project Title-->
-                <h2 class="title-text">Projects</h2>
+                <h2 class="title-text" id="projects-title">Projects</h2>
                 
                 <div class="project-container">
                     
@@ -342,16 +342,16 @@
                 </div>
             </section>
 
-            <!--Resume Section-->
+            <!--Downloads Section-->
             <section class="downloads" id="downloads">
-                <!--Resume Title-->
-                <h2 class="title-text">Downloads</h2>
+                <!--Downloads Title-->
+                <h2 class="title-text" id="downloads-title">Downloads</h2>
                 <div class="downloads-container">
                     
                     <!--Resume Card-->
                     <div class="download-card">
                         <h3>Download My Resume</h3>
-                        <a href="assets/Dulan_Vishwajith_Resume.pdf" target="_blank" class="download-btn"><i class="fas fa-download"></i> Download My Resume</a>
+                        <a href="assets/Dulan_Vishwajith_Resume.pdf" target="_blank" class="download-btn"><i class="fas fa-download"></i> Click Me</a>
                     </div>
 
                 
@@ -362,7 +362,7 @@
             <!--Publications Section-->
             <section class="publications" id="publications">
                 <!--Publications Title-->
-                <h2 class="title-text">Publications</h2>
+                <h2 class="title-text" id="publications-title">Publications</h2>
                 
                 <div class="publications-container">
 
@@ -448,7 +448,7 @@
                 </div>
             </section>
 
-            <button class="back-to-top" id="backToTop" onclick="backToTop()"><i class="fas fa-arrow-up"></i></button>
+            <button class="back-to-top" id="backToTop" onclick="goTo('overview')"><i class="fas fa-arrow-up"></i></button>
         </main>
 
         <!--Footer-->
@@ -457,7 +457,7 @@
             <div class="footer-container">
                 
                 <!--Contact Section-->
-                <h3>GET IN TOUCH</h3>
+                <h3 id="contact-title">GET IN TOUCH</h3>
 
                 <!--Contact Details-->
                 <div class="contact">

@@ -1,98 +1,38 @@
-//--Header Section Navigating--//
+//--Navigating & Animations--//
 
-//function for scroll when click name that in top right corner
-document.getElementById("goOverview").addEventListener("click", function () {
-document.getElementById("overview").scrollIntoView({
-behavior: "smooth"
+//function for scroll when click Title to sections
+const navMap = {
+        "goOverview": "overview",
+        "about-title": "about",
+        "education-title": "education", 
+        "skills-title": "skill",
+        "projects-title": "project",
+        "downloads-title": "downloads",
+        "publications-title": "publications",
+        "contact-title": "contact"
+};
+
+Object.entries(navMap).forEach(([buttonId, sectionId]) => {
+        document.getElementById(buttonId).addEventListener("click",()=> goTo(sectionId));
 });
-});
 
 
-
-//function for scroll when click about button
-function goToAbout(){
-        document.getElementById("about").scrollIntoView({
-                behavior:"smooth"
-        });
-}
-
-//function for scroll when click education button
-function goToEducation(){
-        document.getElementById("education").scrollIntoView({
-                behavior:"smooth"
-        });
-}
-//function for scroll when click project button
-function goToProject(){
-        document.getElementById("project").scrollIntoView({
-                behavior: "smooth"
-        });
-}
-
-//function for scroll when click publication button
-function goToPublications(){
-        document.getElementById("publications").scrollIntoView({
-                behavior:"smooth"
-        });
-}
-
-//function for scroll when click contact button
-function goToContact(){
-        document.getElementById("contact").scrollIntoView({
-                behavior:"smooth"
-        });
-}       
-
-//function for scroll when click skill button
-function goToSkills(){
-        document.getElementById("skill").scrollIntoView({
-                behavior:"smooth"
-        });
-}
-
-//function for scroll when click download button
-function goToDownloads(){
-        document.getElementById("downloads").scrollIntoView({
-                behavior:"smooth"
-        });
-}
-
-//function for scroll when click back to top button
-function backToTop(){
-        document.getElementById("header").scrollIntoView({
+//function for scroll from header butons to sections
+function goTo(sectionId){
+        document.getElementById(sectionId).scrollIntoView({
                 behavior:"smooth"
         });
 }
 
 
-//--Project Section--Dropdown//
-const cards = document.querySelectorAll(".project-card");
+//--Project & Publication Section--Dropdown//
+const cards = document.querySelectorAll(".publication-card , .project-card");
 
-cards.forEach(card => {
+cards.forEach(card =>{
 card.addEventListener("click", () => {
 
         // Close others (optional)
         cards.forEach(c => {
-        if (c !== card) c.classList.remove("active");
-        });
-
-        // Toggle clicked one
-        card.classList.toggle("active");
-});
-});
-
-
-
-
-
-//--Publication Section--Dropdown//
-const pub_cards = document.querySelectorAll(".publication-card");
-
-pub_cards.forEach(card =>{
-card.addEventListener("click", () => {
-
-        // Close others (optional)
-        pub_cards.forEach(c => {
         if (c !== card) c.classList.remove("active");
         });    
         
