@@ -76,6 +76,7 @@ transition: all 0.3s ease;
 /*Image Section*/
 .image img{
     width: 330px;
+    border-radius: 50%;
     display: block;
 }
 
